@@ -11,6 +11,7 @@ from multiprocessing.pool import Pool
 
 def get_page(offset):
 	# 需要七个参数
+	# Need seven parameters
 	params = {
 		'offset': offset,
 		'format': 'json',
@@ -22,6 +23,7 @@ def get_page(offset):
 	}
 
 	# 拼接url
+	# Stitching url
 	url = 'https://www.toutiao.com/search_content/?' + urlencode(params)
 
 	try:
